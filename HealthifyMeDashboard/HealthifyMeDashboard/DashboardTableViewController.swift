@@ -8,21 +8,21 @@
 
 import UIKit
 
-class DashboardTableViewController: UITableViewController {
+class DashboardTableViewController: UITableViewController, CaloriesEatenTableViewCellDelegate{
     
     var cellTapped : Bool = true
     var currentRow = 0
     
+    var storyBoard : UIStoryboard!
+    
+    var expandedIndexPaths: [NSIndexPath] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-
+        
+        self.tableView.registerNib(UINib(nibName: "CaloriesEatenTableViewCell", bundle: nil), forCellReuseIdentifier: "calEatenCell")
         self.tableView.tableFooterView = UIView()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,12 +43,49 @@ class DashboardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("dashboardTableViewCell", forIndexPath: indexPath) as! DashboardTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("calEatenCell", forIndexPath: indexPath) as! CaloriesEatenTableViewCell
         
-        // Configure the cell...
+        if cell.caloriesEatenTableViewCellDelegate == nil
+        {
+            cell.caloriesEatenTableViewCellDelegate = self
+        }
         
+        if indexPath.row == 0
+        {
+            cell.backgroundColor = UIColor(red: 251/255, green: 106/255, blue: 7/255, alpha: 1.0)
+        }
+        
+        else if indexPath.row == 1
+        {
+            cell.backgroundColor = UIColor(red: 39/255, green: 130/255, blue: 191/255, alpha: 1.0)
 
+        }
+        else
+        {
+            cell.backgroundColor = UIColor(red: 83/255, green: 26/255, blue: 171/255, alpha: 1.0)
+
+        }
+        
         return cell
+    }
+    
+    func cellTapped(cell : CaloriesEatenTableViewCell)
+    {
+        let indexPath = self.tableView.indexPathForCell(cell)
+        if expandedIndexPaths.contains(indexPath!)
+        {
+            cell.expandedButtonOutlet.isClicked = false
+            expandedIndexPaths.removeAtIndex(expandedIndexPaths.indexOf(indexPath!)!)
+
+        }
+        else
+        {
+            cell.expandedButtonOutlet.isClicked = true
+            
+            expandedIndexPaths.append(indexPath!)
+
+        }
+        self.tableView.reloadRowsAtIndexPaths([indexPath!], withRowAnimation: UITableViewRowAnimation.Automatic)
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -56,34 +93,9 @@ class DashboardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == currentRow
-        {
-            if cellTapped == false
-            {
-                cellTapped = true
-                return 100
-            }
-            else
-            {
-                cellTapped = false
-                return 40
-            }
-        }
-        return 40
+        return expandedIndexPaths.contains(indexPath) ? 194 : 44
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        currentRow = indexPath.row
-        tableView.beginUpdates()
-        tableView.endUpdates()
-    }
-    
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        currentRow = indexPath.row
-        tableView.beginUpdates()
-        tableView.endUpdates()
-    }
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E05F26F1C9C58DF00C8ACF8 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05F26E1C9C58DF00C8ACF8 /* DashboardTableViewCell.swift */; };
 		5E06B0581C9C2688000C381C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B0571C9C2688000C381C /* AppDelegate.swift */; };
 		5E06B05D1C9C2688000C381C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E06B05B1C9C2688000C381C /* Main.storyboard */; };
 		5E06B0601C9C2688000C381C /* HealthifyMeDashboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B05E1C9C2688000C381C /* HealthifyMeDashboard.xcdatamodeld */; };
@@ -16,6 +15,14 @@
 		5E06B0701C9C2688000C381C /* HealthifyMeDashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B06F1C9C2688000C381C /* HealthifyMeDashboardTests.swift */; };
 		5E06B07B1C9C2688000C381C /* HealthifyMeDashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B07A1C9C2688000C381C /* HealthifyMeDashboardUITests.swift */; };
 		5E06B0891C9C27F3000C381C /* DashboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06B0881C9C27F3000C381C /* DashboardTableViewController.swift */; };
+		5E96070D1C9E699400D5E3E4 /* CaloriesEatenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96070C1C9E699400D5E3E4 /* CaloriesEatenTableViewCell.swift */; };
+		5E96070F1C9E69F700D5E3E4 /* CaloriesEatenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E96070E1C9E69F700D5E3E4 /* CaloriesEatenTableViewCell.xib */; };
+		5E9607281C9EA58300D5E3E4 /* CalEatenDisplayView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9607241C9EA58300D5E3E4 /* CalEatenDisplayView1.swift */; };
+		5E9607291C9EA58300D5E3E4 /* CalEatenDisplayView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E9607251C9EA58300D5E3E4 /* CalEatenDisplayView1.xib */; };
+		5E96072A1C9EA58300D5E3E4 /* CalEatenDisplayView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9607261C9EA58300D5E3E4 /* CalEatenDisplayView2.swift */; };
+		5E96072B1C9EA58300D5E3E4 /* CalEatenDisplayView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E9607271C9EA58300D5E3E4 /* CalEatenDisplayView2.xib */; };
+		5E96072D1C9EEB9A00D5E3E4 /* UpDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96072C1C9EEB9A00D5E3E4 /* UpDownButton.swift */; };
+		5E96072F1C9EEFC800D5E3E4 /* RadialProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96072E1C9EEFC800D5E3E4 /* RadialProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E05F26E1C9C58DF00C8ACF8 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		5E06B0541C9C2688000C381C /* HealthifyMeDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthifyMeDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E06B0571C9C2688000C381C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E06B05C1C9C2688000C381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		5E06B07A1C9C2688000C381C /* HealthifyMeDashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyMeDashboardUITests.swift; sourceTree = "<group>"; };
 		5E06B07C1C9C2688000C381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E06B0881C9C27F3000C381C /* DashboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewController.swift; sourceTree = "<group>"; };
+		5E96070C1C9E699400D5E3E4 /* CaloriesEatenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloriesEatenTableViewCell.swift; sourceTree = "<group>"; };
+		5E96070E1C9E69F700D5E3E4 /* CaloriesEatenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaloriesEatenTableViewCell.xib; sourceTree = "<group>"; };
+		5E9607241C9EA58300D5E3E4 /* CalEatenDisplayView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalEatenDisplayView1.swift; sourceTree = "<group>"; };
+		5E9607251C9EA58300D5E3E4 /* CalEatenDisplayView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalEatenDisplayView1.xib; sourceTree = "<group>"; };
+		5E9607261C9EA58300D5E3E4 /* CalEatenDisplayView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalEatenDisplayView2.swift; sourceTree = "<group>"; };
+		5E9607271C9EA58300D5E3E4 /* CalEatenDisplayView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalEatenDisplayView2.xib; sourceTree = "<group>"; };
+		5E96072C1C9EEB9A00D5E3E4 /* UpDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpDownButton.swift; sourceTree = "<group>"; };
+		5E96072E1C9EEFC800D5E3E4 /* RadialProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +117,14 @@
 			children = (
 				5E06B0571C9C2688000C381C /* AppDelegate.swift */,
 				5E06B05B1C9C2688000C381C /* Main.storyboard */,
-				5E06B0611C9C2688000C381C /* Assets.xcassets */,
 				5E06B0631C9C2688000C381C /* LaunchScreen.storyboard */,
+				5E06B0611C9C2688000C381C /* Assets.xcassets */,
 				5E06B0661C9C2688000C381C /* Info.plist */,
 				5E06B05E1C9C2688000C381C /* HealthifyMeDashboard.xcdatamodeld */,
-				5E06B0881C9C27F3000C381C /* DashboardTableViewController.swift */,
-				5E05F26E1C9C58DF00C8ACF8 /* DashboardTableViewCell.swift */,
+				5E9607351C9F188B00D5E3E4 /* ViewController */,
+				5E9607341C9F186400D5E3E4 /* UIView */,
+				5E9607361C9F18A500D5E3E4 /* Cell */,
+				5E9607371C9F18C100D5E3E4 /* Utilities */,
 			);
 			path = HealthifyMeDashboard;
 			sourceTree = "<group>";
@@ -129,6 +145,43 @@
 				5E06B07C1C9C2688000C381C /* Info.plist */,
 			);
 			path = HealthifyMeDashboardUITests;
+			sourceTree = "<group>";
+		};
+		5E9607341C9F186400D5E3E4 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5E9607241C9EA58300D5E3E4 /* CalEatenDisplayView1.swift */,
+				5E9607251C9EA58300D5E3E4 /* CalEatenDisplayView1.xib */,
+				5E9607261C9EA58300D5E3E4 /* CalEatenDisplayView2.swift */,
+				5E9607271C9EA58300D5E3E4 /* CalEatenDisplayView2.xib */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		5E9607351C9F188B00D5E3E4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E06B0881C9C27F3000C381C /* DashboardTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		5E9607361C9F18A500D5E3E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5E96070C1C9E699400D5E3E4 /* CaloriesEatenTableViewCell.swift */,
+				5E96070E1C9E69F700D5E3E4 /* CaloriesEatenTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		5E9607371C9F18C100D5E3E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5E96072C1C9EEB9A00D5E3E4 /* UpDownButton.swift */,
+				5E96072E1C9EEFC800D5E3E4 /* RadialProgressView.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E06B0651C9C2688000C381C /* LaunchScreen.storyboard in Resources */,
+				5E96072B1C9EA58300D5E3E4 /* CalEatenDisplayView2.xib in Resources */,
+				5E9607291C9EA58300D5E3E4 /* CalEatenDisplayView1.xib in Resources */,
+				5E96070F1C9E69F700D5E3E4 /* CaloriesEatenTableViewCell.xib in Resources */,
 				5E06B0621C9C2688000C381C /* Assets.xcassets in Resources */,
 				5E06B05D1C9C2688000C381C /* Main.storyboard in Resources */,
 			);
@@ -265,10 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E96072F1C9EEFC800D5E3E4 /* RadialProgressView.swift in Sources */,
+				5E9607281C9EA58300D5E3E4 /* CalEatenDisplayView1.swift in Sources */,
 				5E06B0891C9C27F3000C381C /* DashboardTableViewController.swift in Sources */,
 				5E06B0601C9C2688000C381C /* HealthifyMeDashboard.xcdatamodeld in Sources */,
-				5E05F26F1C9C58DF00C8ACF8 /* DashboardTableViewCell.swift in Sources */,
+				5E96072A1C9EA58300D5E3E4 /* CalEatenDisplayView2.swift in Sources */,
+				5E96070D1C9E699400D5E3E4 /* CaloriesEatenTableViewCell.swift in Sources */,
 				5E06B0581C9C2688000C381C /* AppDelegate.swift in Sources */,
+				5E96072D1C9EEB9A00D5E3E4 /* UpDownButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -398,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
