@@ -93,7 +93,7 @@ class DashboardTableViewController: UITableViewController, CaloriesEatenTableVie
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return expandedIndexPaths.contains(indexPath) ? 194 : 44
+        return expandedIndexPaths.contains(indexPath) ? 210 : 50
     }
     
     /*
