@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,7 +16,6 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sj-fj-Kz6" customClass="RadialProgressView" customModule="HealthifyMeDashboard" customModuleProvider="target">
                             <rect key="frame" x="318" y="40" width="35" height="35"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="peK-HM-Ra4"/>
@@ -44,7 +43,6 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjM-Jn-aYd" customClass="RadialProgressView" customModule="HealthifyMeDashboard" customModuleProvider="target">
                             <rect key="frame" x="230" y="40" width="35" height="35"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="VTq-PB-a9t"/>
@@ -67,7 +65,6 @@
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS2-t9-yd8" customClass="RadialProgressView" customModule="HealthifyMeDashboard" customModuleProvider="target">
                             <rect key="frame" x="130" y="40" width="35" height="35"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="S40-MU-Wle"/>
@@ -90,14 +87,12 @@
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIBER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfp-rZ-OIH">
                             <rect key="frame" x="309" y="11" width="53" height="21"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rW-Xl-byO" customClass="RadialProgressView" customModule="HealthifyMeDashboard" customModuleProvider="target">
                             <rect key="frame" x="38" y="40" width="35" height="35"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="HuQ-Se-vn9"/>
                                 <constraint firstAttribute="width" constant="35" id="r9R-2W-now"/>
@@ -124,32 +119,27 @@
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" text="FATS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-Oa-Vy5">
                             <rect key="frame" x="129" y="11" width="42" height="21"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROTEIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjU-A3-xv9">
                             <rect key="frame" x="19" y="11" width="70" height="21"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0j-hy-YbG">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0j-hy-YbG">
                             <rect key="frame" x="68" y="83" width="144" height="30"/>
-                            <animations/>
                             <state key="normal" title="View Nutrient Details">
                                 <color key="titleColor" red="1" green="0.44967725819999999" blue="0.10352640420000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="mI6-yI-H3Y">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" fixedFrame="YES" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="mI6-yI-H3Y">
                             <rect key="frame" x="34" y="91" width="28" height="15"/>
-                            <animations/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yy-eQ-SWq">
                             <rect key="frame" x="11" y="83" width="371" height="1"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="A0j-GV-0eb"/>
@@ -157,13 +147,11 @@
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARBS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ur-b7-Fgp">
                             <rect key="frame" x="221" y="11" width="56" height="21"/>
-                            <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="1yy-eQ-SWq" firstAttribute="top" secondItem="GjM-Jn-aYd" secondAttribute="bottom" constant="8" id="0H6-b9-oWO"/>
@@ -171,7 +159,6 @@
                         <constraint firstItem="1Sj-fj-Kz6" firstAttribute="leading" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-64" id="2vu-6I-aAf"/>
                         <constraint firstItem="lfp-rZ-OIH" firstAttribute="leading" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-73" id="4ni-d2-yEO"/>
                         <constraint firstItem="GjM-Jn-aYd" firstAttribute="top" secondItem="7Ur-b7-Fgp" secondAttribute="bottom" constant="8" id="71G-XC-4tL"/>
-                        <constraint firstAttribute="bottom" secondItem="H0j-hy-YbG" secondAttribute="bottom" constant="5" id="7eS-8k-gbG"/>
                         <constraint firstItem="7Ur-b7-Fgp" firstAttribute="leading" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-161" id="9M0-6g-QSk"/>
                         <constraint firstItem="1Sj-fj-Kz6" firstAttribute="top" secondItem="lfp-rZ-OIH" secondAttribute="bottom" constant="8" id="BTQ-aH-v3K"/>
                         <constraint firstItem="1yy-eQ-SWq" firstAttribute="leading" secondItem="TjU-A3-xv9" secondAttribute="trailing" constant="-78" id="Dja-zf-0t2"/>
@@ -179,8 +166,6 @@
                         <constraint firstAttribute="trailing" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-9" id="JrK-W5-wt8"/>
                         <constraint firstItem="7Ur-b7-Fgp" firstAttribute="trailing" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-105" id="NJv-jR-ruZ"/>
                         <constraint firstItem="1yy-eQ-SWq" firstAttribute="leading" secondItem="QW6-Oa-Vy5" secondAttribute="trailing" constant="-160" id="OVe-Mt-Yww"/>
-                        <constraint firstAttribute="bottom" secondItem="mI6-yI-H3Y" secondAttribute="bottom" constant="12" id="ScK-UW-36K"/>
-                        <constraint firstAttribute="trailing" secondItem="H0j-hy-YbG" secondAttribute="trailing" constant="161" id="SfB-Jc-Tfq"/>
                         <constraint firstItem="1Sj-fj-Kz6" firstAttribute="trailing" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-29" id="WLn-ue-3nv"/>
                         <constraint firstItem="lfp-rZ-OIH" firstAttribute="trailing" secondItem="1yy-eQ-SWq" secondAttribute="trailing" constant="-20" id="beM-Qc-asZ"/>
                         <constraint firstItem="1yy-eQ-SWq" firstAttribute="top" secondItem="3rW-Xl-byO" secondAttribute="bottom" constant="8" id="cVF-AO-fbO"/>
@@ -190,10 +175,7 @@
                         <constraint firstItem="nS2-t9-yd8" firstAttribute="leading" secondItem="1yy-eQ-SWq" secondAttribute="leading" id="ieW-zX-vNi"/>
                         <constraint firstItem="3rW-Xl-byO" firstAttribute="leading" secondItem="1yy-eQ-SWq" secondAttribute="leading" constant="27" id="lro-AH-ILF"/>
                         <constraint firstItem="nS2-t9-yd8" firstAttribute="top" secondItem="QW6-Oa-Vy5" secondAttribute="bottom" constant="8" id="nwy-P1-FMu"/>
-                        <constraint firstItem="H0j-hy-YbG" firstAttribute="leading" secondItem="mI6-yI-H3Y" secondAttribute="trailing" constant="6" id="rId-iA-Nyo"/>
-                        <constraint firstItem="mI6-yI-H3Y" firstAttribute="top" secondItem="1yy-eQ-SWq" secondAttribute="bottom" constant="7" id="rha-vC-tTw"/>
                         <constraint firstItem="3rW-Xl-byO" firstAttribute="top" secondItem="TjU-A3-xv9" secondAttribute="bottom" constant="8" id="sSs-ug-d8u"/>
-                        <constraint firstItem="mI6-yI-H3Y" firstAttribute="leading" secondItem="1Bj-Sx-qDt" secondAttribute="leading" constant="34" id="uF5-PN-S9M"/>
                         <constraint firstItem="1yy-eQ-SWq" firstAttribute="leading" secondItem="1Bj-Sx-qDt" secondAttribute="leading" constant="11" id="uj8-Wy-O6K"/>
                         <constraint firstItem="QW6-Oa-Vy5" firstAttribute="leading" secondItem="1yy-eQ-SWq" secondAttribute="leading" constant="118" id="vdD-Zj-ehd"/>
                         <constraint firstItem="1yy-eQ-SWq" firstAttribute="leading" secondItem="nS2-t9-yd8" secondAttribute="trailing" constant="-154" id="ve7-Xe-kuW"/>
@@ -214,7 +196,6 @@
                     </variation>
                 </view>
             </subviews>
-            <animations/>
             <constraints>
                 <constraint firstItem="1Bj-Sx-qDt" firstAttribute="leading" secondItem="8Wd-Ye-J1e" secondAttribute="leading" constant="8" id="JcG-bJ-c5S"/>
                 <constraint firstItem="1Bj-Sx-qDt" firstAttribute="top" secondItem="8Wd-Ye-J1e" secondAttribute="top" id="aAw-JW-5WG"/>
